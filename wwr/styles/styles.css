@@ -207,8 +207,8 @@ section.faq {
     transition: all 0.3s;
 }
 #faq .no-select, #faq h5 {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
+    /*-webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;*/
     user-select: none;
 }    
 #faq h5 {
@@ -257,7 +257,7 @@ section.faq {
     margin: 0;
     background: #fff;
     box-shadow: 0 3px 10px -2px rgba(0,0,0,0.1);
-    -webkit-tap-highlight-color: transparent;
+    /*-webkit-tap-highlight-color: transparent;*/
 }
 #faq ul li + li {
     margin-top: 15px;
