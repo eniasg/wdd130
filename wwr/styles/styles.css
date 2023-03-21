@@ -246,7 +246,7 @@ section.faq {
 }
 #faq ul {
     list-style: none;
-    perspective: 900;
+    perspective: 900px;
     padding: 0;
     margin: 0;
 }
