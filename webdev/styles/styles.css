@@ -167,6 +167,10 @@ footer .social img {
     grid-row: 2/3;
     padding-bottom: 50px;
 }
+.section-one-img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 #background {
     height: 725px;
     background-color: #fdf6e3;
@@ -197,6 +201,7 @@ footer .social img {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 } 
+
 
 /* Get In Touch Page */
 
