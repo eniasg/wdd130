@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspindale Web Developer | Get In Touch</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div id="content"> 
+    <div id="header-contact">
+        <img class="header-phone" src="images/phone.png" alt="phone-icon">
+        <a href="Tel:01234567890">0123 456 7890</a>
+    </div>  
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/awd-logo.png" alt="Aspindale Web Developer Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="how-i-work.html">How I Work</a>
+            <a href="site-plan.html">Site Plan</a>
+            <a href="contactus.html">Get In Touch</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <img id="banner-img" src="images/contact.jpg" alt="Desktop, keyboard, laptop and tablet">
+    </div>
+    <main class="main-grid">
+        <div id="feedback"></div>
+        <div id="contactus"></div>
+        <div class="contact-form">
+          <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name"/>
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email"/>
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+          </form>
+        </div> 
+        <section class="get-in-touch">
+          <h1>Get In Touch</h1>
+          <p>Do not wait – make contact today. Pay me a visit, I like surprise visits though it will be good to make an appointment to avoid disappointments. There are days when am out at clients’ sites. Feel free to call, email, use any of my social media handles or complete the contact form below. Even if you are not yet sure of what it is you want to have online. Am happy to discuss with you and/or your team. There is no job too complex or too simple. I will definitely get back to you. Your success is my success – let me help you get it done.</p>  
+        </section>    
+    </main>    
+    <footer>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="how-i-work.html">How I Work</a></p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactus.html">Get In Touch</a></p>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+          </a>
+        </div>
+
+    </footer>
+    <div class="copyright">
+        <p>Aspindale Web Developer &copy; 2023 - Enias Gramu</p>
+    </div>
+  </div>
+  <script>
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+    formElement.addEventListener('submit', function(e) {
+        e.preventDefault();
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        feedbackElement.style.display = "block";
+        document.body.classList.toggle('moveDown');
+    });
+  </script>     
+</body>
+</html>
