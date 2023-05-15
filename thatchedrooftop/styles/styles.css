@@ -367,6 +367,9 @@ ul {
         margin-top: -15px;
         margin-bottom: 15px;
     }
+    .logo {
+        position: relative;
+    }
     #hero {
         margin-top: 0;
     }
